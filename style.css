@@ -1,0 +1,1318 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* aftercropping part */
+
+:root {
+  /* Homepage start */
+
+  /* --main--header--fontsize:1.875rem;
+      --main--para:1rem;
+      --nav-hover-color:red; */
+
+  /* navbar start*/
+
+  /* primary nav bar */
+
+  --primary--navbar--height: 14.188rem;
+  --primary--navbar--width: 90rem;
+  --primary--navbar--backgroundcolor: hsl(359, 74%, 43%);
+
+  --primary--navbar--image--height: 10.5rem;
+  --primary--navbar--image--width: 10.5rem;
+
+  --primary--navbar--heading--fontsize: 1.875rem;
+  --primary--navbar--heading--fontfamily: Robotobold;
+  --primary--navbar--heading--textalign: center;
+  --primary--navbar--heading--color: hsl(0, 0%, 100%);
+  --primary--navbar--heading--lineheight: 1.75rem;
+
+  --primary--navbar--button--height: 2.375rem;
+  --primary--navbar--button--width: 10.125rem;
+  --primary--navbar--button--fontsize: 0.875rem;
+  --primary--navbar--button--fontfamily: Robotomedium;
+  --primary--navbar--button--borderradius: 0.313rem;
+  --primary--navbar--button--color: hsl(359, 74%, 43%);
+  --primary--navbar--button--background: linear-gradient(to bottom,
+      hsl(50, 74%, 64%),
+      #c48d33);
+
+  /* secondar nav bar */
+
+  --secondar--navbar--height: 3.813rem;
+  --secondar--navbar--width: 90rem;
+
+  --secondary--navbar--li--a--fontsize: 1rem;
+  --secondary--navbar--li--a--fontfamily: Robotosemibold;
+  --secondary--navbar--li--a--color: hsl(359, 74%, 43%);
+  --secondary--navbar--li--a--background: linear-gradient(to bottom,
+      hsl(44, 98%, 68%),
+      #c69035);
+  --secondary--navbar--li--a--textalign: left;
+  --secondary--navbar--li--a--lineheight: auto;
+
+  --secondary--navbar--li--a--hoverbox--height: 3.813rem;
+  --secondary--navbar--li--a--hoverbox--width: 8.563rem;
+  --secondary--navbar--li--a--hoverbox--color: hsl(38, 76%, 56%);
+
+  --secondary--navbar--li--a--hoverbox--background: linear-gradient(180deg, rgba(255, 0, 3, 1) 0%, rgba(255, 0, 3, 1) 0%, rgba(220, 12, 14, 1) 7%, rgba(119, 8, 9, 1) 96%, rgba(91, 5, 6, 1) 100%);
+  /* background: linear-gradient(180deg, rgba(255,0,3,1) 0%, rgba(255,0,3,1) 0%, rgba(220,12,14,1) 13%, rgba(119,8,9,1) 96%, rgba(91,5,6,1) 100%); */
+  /* --secondary--navbar--li--a--hoverbox--background:linear-gradient(to bottom,
+ #f80305,#ce0e10,#8a0e0e,#740b0d); */
+
+
+  /* --secondary--navbar--li--a--hoverbox--background: linear-gradient(to bottom,
+      #ff0003,
+      #d30f11,
+      #790809,
+      #5b0506); */
+
+  /* navbar end */
+  --webbanner--height: 54.5rem;
+  --webbanner--height: 90rem;
+  --webbanner--heading--fontsize: 1.875rem;
+  --webbanner--heading--fontfamily: Robotobold;
+  --webbanner--heading--color: hsl(0, 0%, 100%);
+  --webbanner--heading--textalign: left;
+  --webbanner-heading--paragraph--fontsize: 0.875rem;
+  --webbanner-heading--paragraph--fontfamily: Robotoregular;
+  --webbanner-heading--paragraph--color: hsl(0, 0%, 100%);
+  --webbanner-heading--paragraph--textalign: left;
+  --webbanner--carousel--icon--height: 1.5rem;
+  --webbanner--carousel--icon--width: 0.938rem;
+  --webbanner--carousel--icon--color: hsl(0, 0%, 100%);
+  --webbanner-heading--button--height: 3.125rem;
+  --webbanner-heading--button--width: 10.5rem;
+  --webbanner-heading--button--fontfamily: Robotomedium;
+  --webbanner-heading--button--borderradius: 0.313rem;
+  --webbanner-heading--button--color: hsl(0, 0%, 85%);
+  --webbanner-heading--button--backgroundcolor: hsl(359, 74%, 43%);
+  --webbanner--whatsapp--icon--height: 2.813rem;
+  --webbanner--whatsapp--icon--width: 2.813rem;
+  --webbanner--enrollnow--form--height: 35.75rem;
+  --webbanner--enrollnow--form--width: 27.875rem;
+  --webbanner--enrollnow--form--backgroundocolor: hsl(359, 74%, 43%);
+  --webbanner--enrollnow--form--heading--fontsize: 1.5rem;
+  --webbanner--enrollnow--form--heading--textalign: left;
+  --webbanner--enrollnow--form--heading--color: hsl(0, 0%, 100%);
+  --webbanner--enrollnow--form--heading--fontfamily: Robotobold;
+  --webbanner--enrollnow--form--tbox1--height: 2.563rem;
+  --webbanner--enrollnow--form--tbox1--width: 23.563rem;
+  --webbanner--enrollnow--form--tbox1--color: hsl(0, 0%, 0%);
+  --webbanner--enrollnow--form--tbox1--fontfamily: Robotomedium;
+  --webbanner--enrollnow--form--tbox1--textalign: left;
+  --webbanner--enrollnow--form--tbox1--borderradius: 0.313rem;
+  --webbanner--enrollnow--form--tbox1--placeholder--color: hsl(0, 0%, 61%);
+  --webbanner--enrollnow--form--tbox1--placeholder--fontsize: 0.875rem;
+  --webbanner--enrollnow--form--tbox2--height: 2.563rem;
+  --webbanner--enrollnow--form--tbox2--width: 23.563rem;
+  --webbanner--enrollnow--form--tbox2--color: hsl(0, 0%, 0%);
+  --webbanner--enrollnow--form--tbox2--fontfamily: Robotomedium;
+  --webbanner--enrollnow--form--tbox2--textalign: left;
+  --webbanner--enrollnow--form--tbox2--borderradius: 0.313rem;
+  --webbanner--enrollnow--form--tbox2--placeholder--color: hsl(0, 0%, 61%);
+  --webbanner--enrollnow--form--tbox2--placeholder--fontsize: 0.875rem;
+  --webbanner--enrollnow--form--tbox3--height: 2.563rem;
+  --webbanner--enrollnow--form--tbox3--width: 23.563rem;
+  --webbanner--enrollnow--form--tbox3--color: hsl(0, 0%, 0%);
+  --webbanner--enrollnow--form--tbox3--fontfamily: Robotomedium;
+  --webbanner--enrollnow--form--tbox3--textalign: left;
+  --webbanner--enrollnow--form--tbox3--borderradius: 0.313rem;
+  --webbanner--enrollnow--form--tbox3--placeholder--color: hsl(0, 0%, 61%);
+  --webbanner--enrollnow--form--tbox3--placeholder--fontsize: 0.875rem;
+  --webbanner--enrollnow--form--dbox4_1--height: 2.563rem;
+  --webbanner--enrollnow--form--dbox4_1--width: 11.125rem;
+  --webbanner--enrollnow--form--dbox4_1--color: hsl(0, 0%, 0%);
+  --webbanner--enrollnow--form--dbox4_1--fontfamily: Robotomedium;
+  --webbanner--enrollnow--form--dbox4_1--icon--color: hsl(0, 0%, 0%);
+  --webbanner--enrollnow--form--dbox4_1--textalign: left;
+  --webbanner--enrollnow--form--dbox4_1--borderradius: 0.313rem;
+  --webbanner--enrollnow--form--dbox4_1--placeholder--color: hsl(0, 0%, 61%);
+  --webbanner--enrollnow--form--dbox4_1--placeholder--fontsize: 0.875rem;
+  --webbanner--enrollnow--form--dbox4_2--height: 2.563rem;
+  --webbanner--enrollnow--form--dbox4_2--width: 11.125rem;
+  --webbanner--enrollnow--form--dbox4_2--color: hsl(0, 0%, 0%);
+  --webbanner--enrollnow--form--dbox4_2--fontfamily: Robotomedium;
+  --webbanner--enrollnow--form--dbox4_2--icon--color: hsl(0, 0%, 0%);
+  --webbanner--enrollnow--form--dbox4_2--textalign: left;
+  --webbanner--enrollnow--form--dbox4_2--borderradius: 0.323rem;
+  --webbanner--enrollnow--form--dbox4_2--placeholder--color: hsl(0, 0%, 61%);
+  --webbanner--enrollnow--form--dbox4_2--placeholder--fontsize: 0.875rem;
+  --webbanner--enrollnow--form--dbox5--height: 2.563rem;
+  --webbanner--enrollnow--form--dbox5--width: 23.563rem;
+  --webbanner--enrollnow--form--dbox5--color: hsl(0, 0%, 0%);
+  --webbanner--enrollnow--form--dbox5--fonrfamily: Robotomedium;
+  --webbanner--enrollnow--form--dbox5--icon--color: hsl(0, 0%, 0%);
+  --webbanner--enrollnow--form--dbox5--textalign: left;
+  --webbanner--enrollnow--form--dbox5--borderradius: 0.323rem;
+  --webbanner--enrollnow--form--dbox5--placeholder--color: hsl(0, 0%, 61%);
+  --webbanner--enrollnow--form--dbox5--placeholder--fontsize: 0.875rem;
+  --webbanner-enrollnow--form--cbox--height: 0.813rem;
+  --webbanner-enrollnow--form--cbox--width: 0.813rem;
+  --webbanner-enrollnow--form--cbox--borderradius: 0.125rem;
+  --webbanner-enrollnow--form--cboxtext--fontsize: 1rem;
+  --webbanner-enrollnow--form--cboxtext--textalign: left;
+  --webbanner-enrollnow--form--cboxtext--color: hsl(0, 0%, 100%);
+  --webbanner-enrollnow--form--cboxtext--fontfamiliy: Robotoregular;
+  --webbanner-enrollnow--form--button--height: 1.875rem;
+  --webbanner-enrollnow--form--button--width: 5.625rem;
+  --webbanner-enrollnow--form--button--fontsize: 0.875rem;
+  --webbanner-enrollnow--form--button--fontfamily: Robotomedium;
+  --webbanner-enrollnow--form--button--textalign: left;
+  --webbanner-enrollnow--form--button--borderradius: 0.125rem;
+  --webbanner-enrollnow--form--button--color: hsl(359, 74%, 43%);
+  --webbanner-enrollnow--form--button--background: linear-gradient(to top,
+      hsl(53, 81%, 68%),
+      hsl(38, 57%, 49%));
+  /* after the webbanner */
+  --homepage--subheading--fontsize: 1.5rem;
+  --homepage--subheading--fontfamily: Robotosemibold;
+  --homepage--subheading--color1: hsl(359, 74%, 43%);
+  --homepage--subheading--color2: hsl(0, 0%, 100%);
+  --homepage--subheading--border: 0.25rem solid;
+  --homepage--subheading--border-image: linear-gradient(45deg,
+      hsl(54, 8#c1862f),
+      #c1862f) 1;
+  --courses--heading--fontsize: 1.375rem;
+  --courses--heading--fontfamily: Robotosemibold;
+  --courses--heading--color: hsl(359, 74%, 43%);
+  --courses--paragraph--fontsize: 0.875rem;
+  --courses--paragraph--fontfamily: Robotoregular;
+  --courses--paragraph--linespacing: 0.125rem;
+  --courses--paragraph--color: hsl(0, 0%, 0%);
+  --courses--subheading--fontsize: 1.25rem;
+  --courses--subheading--p--fontsize: 1rem;
+  --courses--subheading--fontfamily: Robotosemibold;
+  --courses--subheading--p--fontfamily: Robotoregular;
+  --courses--subheading--color: hsl(0, 0%, 100%);
+  --gallery--paragraph--fontsize: 1rem;
+  --gallery--paragraph--fontfamily: Robotomedium;
+  --gallery--paragraph--color: hsl(0, 0%, 100%);
+  --testimonials--fontsize: 2rem;
+  --testimonials--color: hsl(0, 0%, 100%);
+  --testimonials--fontfamily: Robotobold;
+  --scholarship--backgroundcolor: hsl(359, 74%, 43%);
+  --scholarship--paragraph--fontsize: 1.125rem;
+  --scholarship--paragraph--fontfamily: Robotomedium;
+  --scholarship--paragraph--linespacing: 0.25rem;
+  --scholarship--paragraph--color: hsl(0, 0%, 100%);
+  --scholarship--button--fontsize: 0.875rem;
+  --scholarship--button--color: hsl(359, 74%, 43%);
+  --scholarship--button--borderradius: 0.125rem;
+  --scholarship--button--background: linear-gradient(to bottom,
+      hsl(52, 80%, 68%),
+      hsl(39, 56%, 50%));
+  --news--subheading--fontsize: 1.25rem;
+  --news--subheading--fontfamily: Robotosemibold;
+  --news--subheading--color: hsl(0, 0%, 0%);
+  --news--button--fontsize: 0.875rem;
+  /* f-14 */
+  --news--button--color: hsl(0, 0%, 100%);
+  --news--button--backgroundcolor: hsl(359, 74%, 43%);
+  --news--button--borderradius: 0.313rem;
+  /* b-5 */
+  --contactus--batchandmap--fontsize: 1.25rem;
+  /* f-20 */
+  --contactus--bacth--color: hsl(0, 0%, 100%);
+  --contactus--map--color: hsl(359, 74%, 43%);
+  --contactus--map--lineheight: 0.188rem;
+  --footer--backgroundcolor: hsl(359, 74%, 43%);
+  --footer--heading--fontsize: 1.563rem;
+  /* f-25 */
+  --footer--heading--fontfamily: Robotobold;
+  --footer--subheading--fontsize: 1.125rem;
+  /* f-18 */
+  --footer--subheading--fontfamily: Robotomedium;
+  --footer--text--color: hsl(0, 0%, 100%);
+  --footer--logoheading--fontsize: 1.25rem;
+  --footer--logoheading--fontfamily: Robotobold;
+  --footer--logoheading--lineheight: 0.375rem;
+  --footer--batch--fontcolor: hsl(359, 74%, 43%);
+  --footer--batch--background: linear-gradient(to top,
+      hsl(37, 59%, 48%),
+      hsl(54, 85%, 70%));
+  --footer--batch--fontsize: 0.75rem;
+  /* f-12 */
+  /* Homepage end */
+  /* About us start */
+  --color1: hsl(0, 0%, 100%);
+  --color2: hsl(359, 74%, 43%);
+  --color3: hsl(0, 0%, 0%);
+  --about-heading-fontsize: 2.5rem;
+  /* f-40 */
+  --about-heading-fontfamily: Robotobold;
+  --about-subheading-fontsize: 2.25rem;
+  /* f-36 */
+  --about-subheading-fontfamily: Robotosemibold;
+  --about--para--fontsize: 1.25rem;
+  /* f-20 */
+  --about--para--fontfamily: Robotomedium;
+  --about-vismis--heading--fontsize: 1.75rem;
+  /* f-28 */
+  --about-vismis--heading--fontfamily: Robotomedium;
+  /* About us end */
+  /* NIMS courses start */
+  /* aviation , Banking, Fashion Designing, Logistics, Nutrition */
+  --button--lineargradient--redbrown: linear-gradient(to bottom,
+      hsl(359, 100%, 45%),
+      hsl(359, 89%, 21%));
+  --button--font--size: 0.938rem;
+  /* f-15 */
+  --button--font--family: Robotomedium;
+  --button--border--radius: 0.313rem;
+  /* br-5 */
+  --heading--fontsize: 1.5rem;
+  /* f-24 */
+  --heading--fontfamily: Robotosemibold;
+  --subheading--fontsize: 1.375rem;
+  /* f-22 */
+  --subheading--fontfamily: Robotosemibold;
+  --miniheading--fontsize: 1.25rem;
+  /* f-20 */
+  --miniheading--fontfamily: Robotosemibold;
+  --imageunder--paragraph--fontsize: 1.25rem;
+  /* f-20 */
+  --imageunder--paragraph--fontfamily: Robotomedium;
+  --paragraph--fontsize: 0.875rem;
+  /* f-14 */
+  --paragraph--fontfamily: Robotoregular;
+  --table--heading--fontsize: 1rem;
+  /* f-16 */
+  --table--heading--fontfamily: Robotosemibold;
+  --table--content--fontsize: 0.875rem;
+  --table--content--fontfamily: Robotomedium;
+  --tick--icon--lineargradient: linear-gradient(to bottom,
+      hsl(52, 80%, 67%),
+      hsl(38, 57%, 50%));
+  /* Get course info form details */
+  --getcourseinfo--heading--fontsize: 1.5rem;
+  /* f-24 */
+  --getcourseinfo--heading--fontfamily: Robotobold;
+  --getcourseinfo--button--fontsize: 0.938rem;
+  /* f-15 */
+  --getcourseinfo--button--fontfamily: Robotomedium;
+  /* NIMS courses end */
+  /* NIPL courses start */
+  /* Main page */
+  --banner--heading--fontsize: 2.25rem;
+  /* f-36 */
+  --banner--heading--fontfamily: Robotobold;
+  --banner--hint--fontsize: 1.25rem;
+  /* f-20 */
+  --banner--hint--fontfamily: Robotomedium;
+  --subheading--fontsize: 1.5rem;
+  /* f-24 */
+  --subheading--fontfamily: Robotosemibold;
+  --paragraph--fontsize: 1rem;
+  /* f-16 */
+  --paragraph--fontfamily: Robotoregular;
+  --fourcourses--heading--fontsize: 2rem;
+  --fourcourses--heading--fontfamily: Robotomedium;
+  /* aviation and airlines , Fashion Designing, Banking Management */
+  /* Pilot training, Air Hostes, Airportground hanling, Airline and Airport management, flight dispatcher,
+      cabin crew training, Radio telephony restricted.
+    
+      Diploma in Fashion Designing, Certificate Courses
+      
+      Professional Bankers Program */
+  --button--font--size: 0.938rem;
+  /* f-15 */
+  --button--font--family: Robotomedium;
+  --button--border--radius: 0.313rem;
+  /* br-5 */
+  --subheading--fontsize: 1.5rem;
+  /* f-24 */
+  --subheading--fontfamily: Robotosemibold;
+  --subheading--mini--fontsize: 1.375rem;
+  /* f-22 */
+  --subheading--mini--fontfamily: Robotosemibold;
+  --blackheading--fontsize: 1.375rem;
+  /* f-22 */
+  --blackheading--fontfamily: Robotoregular;
+  --paragraph--fontsize: 0.875rem;
+  /* f-14 */
+  --paragraph--fontfamily: Robotoregular;
+  --duration--content--fontsize: 1rem;
+  /* f-16 */
+  --duration--content--fontfamily: Robotoregular;
+  --table--heading--fontsize: 1rem;
+  /* f-16 */
+  --table--heading--fontfamily: Robotosemibold;
+  --table--content--fontsize: 0.875rem;
+  /* f-14 */
+  --table--content--fontfamily: Robotomedium;
+  --tick--icon--lineargradient: linear-gradient(to bottom,
+      hsl(52, 80%, 67%),
+      hsl(38, 57%, 50%));
+  /* NIPL courses end */
+  /* Life @NIMS Start */
+  --subheading--fontsize: 1.5rem;
+  /* f-24 */
+  --subheading--fontfamily: Robotosemibold;
+  --subheading--background: linear-gradient(to bottom,
+      hsl(359, 98%, 47%),
+      hsl(359, 94%, 24%));
+  /* Life @NIMS End */
+  /* Student Placement Start */
+  --webbanner--heading--fontsize: 1.5rem;
+  /* f-24 */
+  --webbanner--heading--fontfamily: Robotobold;
+  --webbanner--paragraph--fontsize: 0.875rem;
+  /* f-14 */
+  --webbanner--paragraph--fontfamily: Robotoregular;
+  --button--font--size: 0.938rem;
+  /* f-15 */
+  --button--font--family: Robotomedium;
+  --button--border--radius: 0.313rem;
+  /* br-5 */
+  --placedstudent--heading--fontsize: 2rem;
+  --placedstudent--heading--fontfamily: Robotobold;
+  --placedstudent--details--fontsize: 1.25rem;
+  --placedstudent--details--fontfamily: Robotomedium;
+  --table--heading--fontsize: 1rem;
+  /* f-16 */
+  --table--heading--fontfamily: Robotosemibold;
+  --table--content--fontsize: 0.875rem;
+  /* f-14 */
+  --table--content--fontfamily: Robotomedium;
+  /* Student Placement End */
+  /* News Start */
+  --heading--fontsize: 1.75rem;
+  /* f-28 */
+  --heading--fontfamily: Robotoregular;
+  --subheading--fontsize: 1.5rem;
+  /* f-24 */
+  --subheading--fontfamily: Robotoregular;
+  --paragraph--fontsize: 1rem;
+  /* f-16 */
+  --paragraph--fontfamily: Robotoregular;
+  /* News End */
+  /* Online Scholorship Start */
+  --webbanner--heading--fontsize: 1.5rem;
+  /* f-24 */
+  --webbanner--heading--fontfamily: Robotobold;
+  --webbanner--heading--fontsize: 1.5rem;
+  /* f-24 */
+  --webbanner--heading--fontfamily: Robotosemibold;
+  --webbanner--paragraph--fontsize: 0.875rem;
+  /* f-14 */
+  --webbanner--paragraph--fontfamily: Robotoregular;
+  --subheading--fontsize: 1.5rem;
+  /* f-24 */
+  --subheading--fontfamily: Robotosemibold;
+  --paragraph--fontsize: 0.875rem;
+  /* f-14 */
+  --paragraph--fontfamily: Robotoregular;
+  /* scholorship form start */
+  --form--fontsize: 0.875rem;
+  /* f-14 */
+  --form--fontfamily: Robotosemibold;
+  --button--font--size: 0.938rem;
+  /* f-15 */
+  --button--font--family: Robotomedium;
+  --button--border--radius: 0.313rem;
+  /* br-5 */
+  /* scholorship form end */
+  /* Online Scholorship End */
+  /* Online Application Start */
+  --formpage--heading--fontsize: 1.875rem;
+  /* f-30 */
+  --formpage--heading--fontfamily: Robotomedium;
+  --formpage--subheading--fontsize: 1.5rem;
+  /* f-30 */
+  --formpage--subheading--fontfamily: Robotomedium;
+  --form--heading--fontsize: 1.25rem;
+  /* f-20 */
+  --form--heading--fontfamily: Robotobold;
+  --form--label--fontsize: 1.125rem;
+  /* f-18 */
+  --form--label--fontfamily: Robotobold;
+  --form--radiobuttonlabel--fontsize: 1.125rem;
+  /* f-18 */
+  --form--radiobuttonlabel--fontfamily: Robotoregular;
+  --form--button--fontsize: 1.25rem;
+  /* f-20 */
+  --form--button--fontfamily: Robotosemibold;
+  /* Online Application End */
+}
+
+/* fontface START */
+@font-face {
+  font-family: Robotoregular;
+  src: url(font/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Robotomedium;
+  src: url(font/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: Robotobold;
+  src: url(font/Roboto-Bold.ttf);
+}
+
+/* fontface END */
+
+
+
+
+/* fontfamily start */
+
+.robotoregular {
+  font-family: Robotoregular;
+}
+
+.robotomedium {
+  font-family: Robotomedium;
+}
+
+.robotosemibold {
+  font-family: Robotomedium;
+  /* font-family: Robotobold;
+  font-weight: 600; */
+}
+
+.robotobold {
+  font-family: Robotomedium;
+  /*font-family: Robotobold; */
+}
+
+/* fontfamily end */
+/* color start */
+.red {
+  color: hsl(359, 74%, 43%);
+}
+
+.white {
+  color: hsl(0, 0%, 100%);
+}
+
+.yellow {
+  color: hsl(38, 76%, 56%);
+}
+
+.black {
+  color: hsl(0, 0%, 0%);
+}
+
+.grey {
+  color: hsl(0, 0%, 61%);
+  /* color: var(--color3); */
+}
+
+/* color end */
+
+
+
+
+/* background-color start */
+
+.bgred {
+  background-color: hsl(359, 74%, 43%);
+}
+
+/* background-color end */
+
+
+
+
+/* linear-gradient start */
+
+.lg1 {
+  background: linear-gradient(to bottom, hsl(50, 74%, 64%), hsl(37, 59%, 48%));
+}
+
+.lg2 {
+  background: linear-gradient(to bottom, hsl(44, 98%, 68%), hsl(38, 58%, 49%));
+}
+
+.lg3 {
+  background: linear-gradient(to top, hsl(53, 81%, 68%), hsl(38, 57%, 49%));
+}
+
+.lg4 {
+  background: linear-gradient(to bottom, hsl(52, 80%, 68%), hsl(39, 56%, 50%));
+}
+
+.lg5 {
+  background: linear-gradient(to top, hsl(37, 59%, 48%), hsl(54, 85%, 70%));
+}
+
+/* 650607 , 750808*/
+/* .lg6 {
+  background: linear-gradient(to bottom,#f80305,#ce0e10,#b20f0f,#ba0d10);
+} */
+.lg6 {
+  background: linear-gradient(to bottom,
+      hsl(359, 100%, 50%),
+      hsl(359, 87%, 44%),
+      hsl(359, 88%, 25%),
+      hsl(359, 90%, 19%));
+}
+
+.lg7 {
+  background: linear-gradient(to bottom,
+      hsl(359, 98%, 47%),
+      hsl(359, 94%, 24%));
+}
+
+.bi-check-circle-fill {
+  background: -webkit-linear-gradient(hsl(52, 80%, 67%), hsl(38, 57%, 50%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.checkwhite {
+  color: white;
+}
+
+/* linear-gradient end */
+
+
+
+
+/* font-size start */
+
+.f12 {
+  font-size: 0.75rem;
+}
+
+.f14 {
+  font-size: 0.875rem;
+}
+
+.f15 {
+  font-size: 0.938rem;
+}
+
+.f16 {
+  font-size: clamp(0.875rem, 0.8085rem + 0.2128vw, 1rem);
+}
+
+.f18 {
+  font-size: clamp(1rem, 0.8571rem + 0.2976vw, 1.125rem);
+  /* font-size: 1.125rem; */
+}
+
+.f20 {
+  font-size: clamp(1rem,
+      0.6755rem + 0.6383vw,
+      1.25rem);
+  /* font-size: clamp(1rem, 0.7143rem + 0.5952vw, 1.25rem); */
+  /* font-size: clamp(0.75rem, 1.2818rem + -2.5424vw, 1.25rem); */
+  /* font-size: 1.25rem; */
+}
+
+.f22 {
+  font-size: clamp(1.125rem,
+      0.992rem + 0.4255vw,
+      1.375rem);
+  /* font-size: 1.375rem; */
+}
+
+.f24 {
+  font-size: clamp(1.25rem, 1.117rem + 0.4255vw, 1.5rem);
+  /* font-size: 1.5rem; */
+}
+
+.f25 {
+  font-size: clamp(1.25rem, 1.0838rem + 0.5319vw, 1.5625rem);
+  /* font-size: 1.563rem; */
+}
+
+.f28 {
+  font-size: clamp(1.5rem, 1.367rem + 0.4255vw, 1.75rem);
+  /* font-size: 1.75rem; */
+}
+
+.f30 {
+  font-size: clamp(1.5rem,
+      1.3005rem + 0.6383vw,
+      1.875rem);
+  /* font-size: 1.875rem; */
+}
+
+.f36 {
+  font-size: clamp(1.75rem,
+      1.484rem + 0.8511vw,
+      2.25rem);
+  /* font-size: 2.25rem; */
+}
+
+.f40 {
+  font-size: clamp(1.875rem,
+      1.5426rem + 1.0638vw,
+      2.5rem);
+  /* font-size: 2.5rem; */
+}
+
+/* font-size end */
+
+
+/* borderimage Start */
+.borderimage {
+  display: inline;
+  /* width:120px; */
+  border-bottom: 0.25rem solid;
+  border-image: linear-gradient(45deg, hsl(54, 86%, 70%), hsl(36, 61%, 47%)) 1;
+}
+
+/* borderimage End */
+
+/* border start */
+
+.borderred {
+  border: 2px solid hsl(359, 74%, 43%);
+}
+
+.pageback:hover {
+  background-color: hsl(359, 74%, 43%);
+  /* background: linear-gradient(to bottom,
+hsl(359,100%,45%),
+hsl(359,89%,21%)); */
+  color: white;
+}
+
+.borderstart {
+  border-left: 3px solid hsl(359, 74%, 43%);
+}
+
+@media screen and (max-width:425px) {
+  .borderstart {
+    border-left: none;
+  }
+}
+
+/* border end*/
+
+
+/* backgroundimage start */
+.counter_bg {
+  background-image: url(pic/homepage/testimonials/counter_bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bgimage {
+  background-color: hsl(359, 74%, 43%);
+  background-repeat: no-repeat;
+  /* background-position: top left;
+    background-size: 100%; */
+  background: url(pic/about/meducation_bg.svg);
+}
+
+.aboutniplbg {
+  background-color: hsl(359, 74%, 43%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: url(pic/nipl_courses/aboutniplbg.svg);
+}
+
+.mcourses {
+  /* background-color: yellow; */
+  background-size: cover;
+  background-image: url(pic/homepage/nimscourses/management_course_bg.svg);
+}
+
+.scourses {
+  /* background-color: yellow; */
+  background-size: cover;
+  background-image: url(pic/homepage/nimscourses/science_course_bg.svg);
+  background-repeat: no-repeat;
+}
+
+.headimagee {
+  /* background-color: rgb(135, 135, 0); */
+  background-image: url(pic/header/headribbon2.svg);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+}
+
+.footimage {
+  background-image: url(pic/footer/footribbon2_2_2.svg);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: 100%;
+}
+
+/* About - Mission and Vision */
+.visionbg {
+  background-image: url(pic/about/ribbon_1.svg);
+  /* background-size: left left 30px; */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.missionbg {
+  /* background-image: url(pic/about/ribbon_2.svg); */
+  /* background-position: center; */
+  /* rotate: 30deg; */
+  /* background-size: 100%; */
+  max-width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* backgroundimage end */
+
+/* Hover start */
+.navbutton:hover {
+  color: hsl(359, 74%, 43%);
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  color: hsl(38, 76%, 56%);
+  background: var(--secondary--navbar--li--a--hoverbox--background);
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: hsl(359, 74%, 43%);
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  transition: 0.5s;
+  color: hsl(0, 0%, 100%);
+  background: var(--secondary--navbar--li--a--hoverbox--background);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+/* .nav-item a:hover {
+  color: hsl(38, 76%, 56%);
+  background: var(--secondary--navbar--li--a--hoverbox--background);
+} */
+.dropdown-item {
+  color: hsl(359,
+      74%,
+      43%);
+  /* background: var(--secondary--navbar--li--a--hoverbox--background); */
+}
+
+.dropdown-item:hover {
+  color: hsl(38, 76%, 56%);
+  background: var(--secondary--navbar--li--a--hoverbox--background);
+}
+
+.readmore:hover {
+  color: hsl(359, 74%, 43%);
+  background-color: transparent;
+  border: 1px solid hsl(359, 74%, 43%);
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  z-index: 99;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  color: hsl(359, 74%, 43%);
+  font-family: Robotoregular;
+  font-weight: bold;
+  background: linear-gradient(to top, hsl(37, 59%, 48%), hsl(54, 85%, 70%));
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 12px 22px;
+  transition: 1s;
+  text-shadow: 0.5px 0.5px black;
+}
+
+#myBtn:hover {
+  color: hsl(50, 85%, 60%);
+  background: linear-gradient(to bottom,
+      hsl(359, 100%, 50%),
+      hsl(359, 87%, 44%),
+      hsl(359, 88%, 25%),
+      hsl(359, 90%, 19%));
+  text-shadow: 1px 1px black;
+}
+
+/* Hover end */
+/* tab start (this styling applied to all over this project tab) */
+.nav-pills .nav-item .nav-link {
+  color: hsl(359, 74%, 43%);
+  border: 2px solid hsl(359, 74%, 43%);
+  /* background-color: yellow; */
+}
+
+.nav-pills .nav-item .nav-link.active {
+  color: white;
+  /* background-color: hsl(359, 74%, 43%); */
+  /* background: linear-gradient(to bottom,
+      hsl(359, 98%, 47%),
+      hsl(359, 94%, 24%)); */
+  background: linear-gradient(to bottom,
+      hsl(359, 100%, 45%),
+      hsl(359, 89%, 21%));
+  padding: 10px;
+  border: none;
+  /* border-top:2px solid;
+  border-image:  linear-gradient(to bottom, hsl(359, 98%, 47%), hsl(359, 94%, 24%)); */
+  /* background-color: none; */
+  /* background-color: orange; */
+}
+
+.nav-pills .nav-link {
+  color: hsl(359, 74%, 43%);
+  border: 2px solid hsl(359, 74%, 43%);
+  /* background-color: yellow; */
+}
+
+.nav-pills .nav-link.active {
+  color: white;
+  /* background-color: hsl(359, 74%, 43%); */
+  /* background: linear-gradient(to bottom,
+      hsl(359, 98%, 47%),
+      hsl(359, 94%, 24%)); */
+  background: linear-gradient(to bottom,
+      hsl(359, 100%, 45%),
+      hsl(359, 89%, 21%));
+  padding: 10px;
+  border: none;
+  /* border-top:2px solid;
+  border-image:  linear-gradient(to bottom, hsl(359, 98%, 47%), hsl(359, 94%, 24%)); */
+  /* background-color: none; */
+  /* background-color: orange; */
+}
+
+/* tab end */
+/* removing list start (using page - niplpage) */
+.listing li {
+  list-style-type: none;
+}
+
+/* removing list end */
+/* beforecropping part */
+/* gallery */
+/* .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-flow: dense;
+}
+
+.gallery {
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.event {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.environment {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.instaclicks {
+  grid-area: 2 / 2 / 3 / 4;
+} */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-flow: dense;
+}
+
+.gallery {
+  grid-area: 1 / 1 / 3 / 2;
+  background-image: url('pic/homepage/gallery/gallery_main.svg');
+  width: 100%;
+}
+
+.event {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.environment {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.instaclicks {
+  grid-area: 2 / 2 / 3 / 4;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row;
+  }
+
+  .gallery {
+    grid-area: auto;
+  }
+
+  .event {
+    grid-area: auto;
+  }
+
+  .environment {
+    grid-area: auto;
+  }
+
+  .instaclicks {
+    grid-area: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+  }
+}
+
+/* textalignmen start */
+
+.textjustify {
+  text-align: justify;
+}
+
+/* textalignmen end */
+
+/* .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "gallery event environment"
+    "gallery instaclicks instaclicks";
+  height: 100vh;
+  gap: 20px;
+}
+.gallery {
+  background-image: url('./pic/homepage/gallery/gallery_main.svg');
+  grid-area: gallery;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.event {
+  background-repeat: no-repeat;
+  background-image: url('./pic/homepage/gallery/environment_clicks.svg');
+  grid-area: event;
+  background-size: cover;
+}
+.environment {
+  background-repeat: no-repeat;
+  background-image: url('./pic/homepage/gallery/event_clicks.svg');
+  grid-area: environment;
+  background-size: cover;
+}
+.instaclicks {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./pic/homepage/gallery/video.svg');
+  grid-area: instaclicks;
+} */
+/* end gallery */
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .footimage {
+    background-image: url(pic/footer/footribbon2_2_2.svg);
+    /* background-repeat: no-repeat; */
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .coursecontentbg {
+    background-image: url(pic/nipl_courses/banking\ management/ccright.svg),
+      url(pic/nipl_courses/banking\ management/ccleft.svg);
+    background-repeat: no-repeat;
+    background-position: left, right;
+    background-size: 125px, 125px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .footimage {
+    background-image: url(pic/footer/footribbon2_2_2.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 1735px;
+  }
+
+  .coursecontentbg {
+    background-image: url(pic/nipl_courses/banking\ management/ccright.svg),
+      url(pic/nipl_courses/banking\ management/ccleft.svg);
+    background-repeat: no-repeat;
+    background-position: left, right;
+    background-size: 140px, 140px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footimage {
+    background-image: url(pic/footer/footribbon2_2_2.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 2480px;
+  }
+
+  .coursecontentbg {
+    background-image: url(pic/nipl_courses/banking\ management/ccright.svg),
+      url(pic/nipl_courses/banking\ management/ccleft.svg);
+    background-repeat: no-repeat;
+    background-position: left, right;
+    background-size: 164px, 164px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footimage {
+    background-image: url(pic/footer/footribbon2_2_2.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 2620px;
+  }
+
+  .coursecontentbg {
+    background-image: url(pic/nipl_courses/banking\ management/ccright.svg),
+      url(pic/nipl_courses/banking\ management/ccleft.svg);
+    background-repeat: no-repeat;
+    background-position: left, right;
+    background-size: 194px, 194px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footimage {
+    background-image: url(pic/footer/footribbon2_2_2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 3500px;
+  }
+}
+
+/* pageform backgrounds */
+/* .niplcoursesbg {
+  background-image: url('pic/nipl_courses/nipl_course_info.svg');
+  width: 100%;
+  height: 75vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+/* .niplfashionformbg {
+  background-image: url('pic/nipl_courses/fashion\ designing/fd_course_info.svg');
+  width: 100%;
+  height: 75vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+/* .niplaviationformbg {
+  background-image: url('pic/nipl_courses/airlines\ and\ airport\ management/nipl_ariline_and_airport_course_info.svg');
+  width: 100%;
+  height: 75vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+/* .niplbankingformbg {
+  background-image: url('pic/nipl_courses/banking\ management/banking_management_course_info.svg');
+  width: 100%;
+  height: 75vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nipllogisticsformbg {
+  background-image: url('pic/nipl_courses/logistics/nipl_course_info.svg');
+  width: 100%;
+  height: 75vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+/* .nimsaviationformbg {
+  background-image: url('pic/nims_courses/aviation/aviation_get_course_info_bg.jpg');
+  width: 100%;
+  height: 75vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+/* .nimsbankingformbg {
+  background-image: url('pic/nims_courses/banking/banking_course_info_bg.jpg');
+  width: 100%;
+  height: 75vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+/* .nimsfashionformbg {
+  background-image: url('pic/nims_courses/fashion\ designing/fashion_designing_course_info.jpg');
+  width: 100%;
+  height: 75vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+/* .nimslogisticsformbg {
+  background-image: url('pic/nims_courses/logistics/logistics_couse_info_bg.jpg');
+  width: 100%;
+  height: 75vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+/* .nimsnutritionformbg {
+  background-image: url('pic/nims_courses/nutrition/nutrition_get_course_info.jpg');
+  width: 100%;
+  height: 75vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+/* .spformbg {
+  background-image: url('pic/student placement/sp_course_info.svg');
+  width: 100%;
+  height: 75vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 726px) {
+  .nimsaviationformbg {
+    background-image: url('pic/nims_courses/aviation/aviation_get_course_info_bg.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  .spformbg {
+    background-image: url('pic/student placement/sp_course_info.svg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1,
+        1fr);
+    gap: 10px;
+    grid-auto-flow: dense;
+  }
+
+  .spformbg {
+    background-image: url('pic/student placement/sp_course_info.svg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .gallery {
+    grid-area: 1 / 1 / 1 / 1;
+  }
+
+  .event {
+    grid-area: 1 / 1 / 1 / 1;
+  }
+
+  .environment {
+    grid-area: 1 / 1 / 1 / 1;
+  }
+
+  .instaclicks {
+    grid-area: 1 / 1 / 1 / 1;
+  }
+} */
